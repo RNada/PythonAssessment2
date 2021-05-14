@@ -106,9 +106,16 @@ def three(a):
 
 def four(input1, input2):
 	def merge(input1, input2):
-		
+		result = ""
+		i = 0
+		while (i < len(input1)) or (i < len(input2)):
+			if (i < len(input1)):
+				result += input1[i]
+			if (i < len(input2)):
+				result += input2[i]
+			i += 1
 
-	return ""
+	return result
 
 	# <QUESTION 5>
 
@@ -125,7 +132,9 @@ def four(input1, input2):
 	# The random module contains a function called randint.
 
 def five():
-    return []
+	import random
+	(random.sample([i for i in range(100,200) if i%2==0], 5))
+	return []
 
 	# <QUESTION 6>
 
@@ -144,7 +153,11 @@ def five():
 	# There are no hints for this question.
     
 def six(input):
-	return False
+	edit = input.lower()
+	if input.endswith('py'):
+		return True
+	else:
+		return False
 
 	# <QUESTION 7>
 
