@@ -30,7 +30,11 @@
 	# How does a for loop iterate through a string?
 
 def one(input):
-	return ""
+	result = ""
+	for char in input:
+		result += char * 3
+	return result
+
 
 	# <QUESTION 2>
 
@@ -48,7 +52,10 @@ def one(input):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
 def two(input):
-    return False
+	if input%input == 1:
+		return True
+	else:
+		return False
 
 	# <QUESTION 3>
 
@@ -65,7 +72,11 @@ def two(input):
 	# What happens if you multiply a string by a number?
 
 def three(a):
-	return 1
+	for i in range(1,5):
+  		result = result + int(str(a*i))
+	return result
+
+
 
 	# <QUESTION 4>
 
@@ -94,6 +105,9 @@ def three(a):
 	# How would you seperate a string into characters?
 
 def four(input1, input2):
+	def merge(input1, input2):
+		
+
 	return ""
 
 	# <QUESTION 5>
